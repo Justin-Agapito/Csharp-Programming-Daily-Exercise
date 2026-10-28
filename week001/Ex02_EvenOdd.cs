@@ -2,6 +2,16 @@ static class Ex02_EvenOdd
 {
     public static void Run()
     {
-        Console.WriteLine("Test1");
+    for (int x = 0; x < 20; x++)
+        {
+            if (x % 2 == 0)
+            {
+                Console.WriteLine($"{x} is even number");
+            }
+            else
+            {
+                Console.WriteLine($"{x} is odd number");
+            }
+        }
     }
 }
