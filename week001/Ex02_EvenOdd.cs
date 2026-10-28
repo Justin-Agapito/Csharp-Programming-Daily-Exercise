@@ -2,7 +2,9 @@ static class Ex02_EvenOdd
 {
     public static void Run()
     {
-    for (int x = 0; x < 20; x++)
+        //Main task ODD and EVEN
+        //1-20
+        for (int x = 0; x < 20; x++)
         {
             if (x % 2 == 0)
             {
@@ -13,5 +15,8 @@ static class Ex02_EvenOdd
                 Console.WriteLine($"{x} is odd number");
             }
         }
+
+        //Variation #1
+        
     }
 }
