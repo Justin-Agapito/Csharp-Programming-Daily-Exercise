@@ -10,7 +10,7 @@ Stuck rule: after 15 minutes stuck, write down what I tried, look up syntax only
 - Pseudocode:I used for loop statement and used i = 0; < = 10; 0++ for the main task that is
 - Time taken:Oct. 27, 2026 3:30PM
 - Looked anything up? (what): how does for loop statement works via w3schools
-- Where I got stuck:times table for a number the user enters.
+- Where I got stuck:times table for a number the user enters because of having a trouble doing it repeatedly
 - Hand trace done? (yes/no): no
 
 ## Ex02: Even or odd
