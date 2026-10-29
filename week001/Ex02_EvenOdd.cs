@@ -17,6 +17,15 @@ static class Ex02_EvenOdd
         }
 
         //Variation #1
-        
+        Console.WriteLine("Enter a number:");
+        string? input = Console.ReadLine();
+        if (decimal.TryParse(input, out decimal output))
+        {
+            Console.WriteLine($"{output}");
+        }
+        else
+        {
+            Console.WriteLine("your input is not a number, please try again.");
+        }
     }
 }
