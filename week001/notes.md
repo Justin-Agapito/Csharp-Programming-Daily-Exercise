@@ -27,8 +27,8 @@ Stuck rule: after 15 minutes stuck, write down what I tried, look up syntax only
 **Task:** For each number from 1 to n, print "Fizz" if it's divisible by 3, "Buzz" if by 5, "FizzBuzz" if by both, otherwise the number.
 **Variations:** let the user enter n, and count how many Fizz, Buzz and FizzBuzz lines there were.
 
-- Pseudocode:
-- Time taken:
-- Looked anything up? (what):
-- Where I got stuck:
-- Hand trace done? (yes/no):
+- Pseudocode (written after coding): read n; set three counters to 0; for each i from 1 to n: if divisible by 3 and 5 then print FizzBuzz and add 1 to that counter, else if divisible by 3 then print Fizz and count it, else if divisible by 5 then print Buzz and count it, else print i; after the loop print the three totals
+- Time taken: about 120 min of coding, spread over several days (Oct 28 to Nov 3)
+- Looked anything up? (what): for loop and if/else on W3Schools; Enumerable.Range (turned out not to be needed)
+- Where I got stuck: (1) tested `number` instead of `i` inside the loop; (2) put the FizzBuzz check last so 15 printed Fizz; (3) wasn't sure where to declare the counters (before the loop so they keep their values, and so they're still in scope for the totals)
+- Hand trace done? (yes/no): No
