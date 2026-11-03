@@ -17,11 +17,13 @@ Stuck rule: after 15 minutes stuck, write down what I tried, look up syntax only
 **Task:** Read a number from the console. Print "even" or "odd".
 **Variations:** handle 0 and negative numbers, and re-ask if the input isn't a number.
 
-- Pseudocode:I used the for loop statement and if that x % 2 == 0 and else it's an odd number
-- Time taken:Oct. 28, 2026 12:50PM
-- Looked anything up? (what): how does for loop statement works via w3schools 
-- Where I got stuck: if there is a function for odd and even and how to implement it. variation- I took it at the next day (Oct. 29, 2026)and then forgot how to write code lol. But I eventually grasp it again after a little trial and error again.
-- Hand trace done? (yes/no): yes
+**Status:** Core task done. 0/negatives: ___ (confirm by running -3, -4 and 0). Re-ask loop: not done yet (needs `while`).
+
+- Pseudocode: ask for a number; if it converts to a whole number: if it is divisible by 2 print even, otherwise print odd; if it doesn't convert, print a message. (Warm-up first: a for loop from 1 to 20 printing even/odd for each.)
+- Time taken: ___ min total (Oct 28 to Nov 3, over several sessions)
+- Looked anything up? (what): for loop on W3Schools; int.TryParse
+- Where I got stuck: (1) didn't know how to test even/odd and whether there was a function for it (`% 2 == 0` works); (2) the loop started at 0 and stopped at 19 instead of 1 to 20, fixed with `x = 1` and `x <= 20`; (3) first version used `decimal` and only echoed the number instead of testing it; (4) forgot the syntax when I came back the next day (Oct 29) and had to re-derive it by trial and error
+- Hand trace done? (yes/no): yes for the loop; ___ for the final version (trace 4, 7, 0, -3, -4)
 
 ## Ex03: FizzBuzz
 **Task:** For each number from 1 to n, print "Fizz" if it's divisible by 3, "Buzz" if by 5, "FizzBuzz" if by both, otherwise the number.
