@@ -20,7 +20,7 @@ Stuck rule: after 15 minutes stuck, write down what I tried, look up syntax only
 **Status:** Core task done. 0/negatives: ___ (confirm by running -3, -4 and 0). Re-ask loop: not done yet (needs `while`).
 
 - Pseudocode: ask for a number; if it converts to a whole number: if it is divisible by 2 print even, otherwise print odd; if it doesn't convert, print a message. (Warm-up first: a for loop from 1 to 20 printing even/odd for each.)
-- Time taken: ___ min total (Oct 28 to Nov 3, over several sessions)
+- Time taken: 30 mins total (Oct 28 and Nov 3, over few sessions)
 - Looked anything up? (what): for loop on W3Schools; int.TryParse
 - Where I got stuck: (1) didn't know how to test even/odd and whether there was a function for it (`% 2 == 0` works); (2) the loop started at 0 and stopped at 19 instead of 1 to 20, fixed with `x = 1` and `x <= 20`; (3) first version used `decimal` and only echoed the number instead of testing it; (4) forgot the syntax when I came back the next day (Oct 29) and had to re-derive it by trial and error
 - Hand trace done? (yes/no): yes for the loop; ___ for the final version (trace 4, 7, 0, -3, -4)
