@@ -17,15 +17,15 @@ Stuck rule: after 15 minutes stuck, write down what I tried, look up syntax only
 **Task:** Read a number from the console. Print "even" or "odd".
 **Variations:** handle 0 and negative numbers, and re-ask if the input isn't a number.
 
-**Status:** Core task done. 0/negatives: ___ (confirm by running -3, -4 and 0). Re-ask loop: not done yet (needs `while`).
+**Status:** Core task done. 0/negatives: done (tested 4, 7, 0, -3, -4). Re-ask loop: not done yet (needs `while`); right now bad input prints a message and the program ends.
 
-- Pseudocode: ask for a number; if it converts to a whole number: if it is divisible by 2 print even, otherwise print odd; if it doesn't convert, print a message. (Warm-up first: a for loop from 1 to 20 printing even/odd for each.)
+- Pseudocode: ask for a number; if it converts to a whole number: if it is divisible by 2 print even, otherwise print odd; if it doesn't convert, print a message. (Warm-up, now commented out in the file: a for loop from 1 to 20 printing even/odd for each.)
 - Time taken: 30 mins total (Oct 28 and Nov 3, over few sessions)
 - Looked anything up? (what): for loop on W3Schools; int.TryParse
-- Where I got stuck: (1) didn't know how to test even/odd and whether there was a function for it (`% 2 == 0` works); (2) the loop started at 0 and stopped at 19 instead of 1 to 20, fixed with `x = 1` and `x <= 20`; (3) first version used `decimal` and only echoed the number instead of testing it; (4) forgot the syntax when I came back the next day (Oct 29) and had to re-derive it by trial and error
-- Hand trace done? (yes/no): yes for the loop; ___ for the final version (trace 4, 7, 0, -3, -4)
+- Where I got stuck: (1) didn't know how to test even/odd and whether there was a function for it (`% 2 == 0` works); (2) the loop started at 0 and stopped at 19 instead of 1 to 20, fixed with `x = 1` and `x <= 20`; (3) first version used `decimal` and only echoed the number instead of testing it; (4) the first version of the core task read the number but never tested it, and I had to connect the user's number to the even/odd check; (5) forgot the syntax when I came back the next day (Oct 29) and had to re-derive it by trial and error
+- Hand trace done? (yes/no): yes for the loop; yes, after the fact, for the final version (traced 4, 7, 0, -3, -4)
 
-## Ex03: FizzBuzz
+## Ex03: FizzBuzz   
 **Task:** For each number from 1 to n, print "Fizz" if it's divisible by 3, "Buzz" if by 5, "FizzBuzz" if by both, otherwise the number.
 **Variations:** let the user enter n, and count how many Fizz, Buzz and FizzBuzz lines there were.
 
@@ -34,3 +34,13 @@ Stuck rule: after 15 minutes stuck, write down what I tried, look up syntax only
 - Looked anything up? (what): for loop and if/else on W3Schools; Enumerable.Range (turned out not to be needed)
 - Where I got stuck: (1) tested `number` instead of `i` inside the loop; (2) put the FizzBuzz check last so 15 printed Fizz; (3) wasn't sure where to declare the counters (before the loop so they keep their values, and so they're still in scope for the totals)
 - Hand trace done? (yes/no): No
+
+## Ex04: Grade classifier
+**Task:** Read a score from 0 to 100 and print a letter grade (A: 90 to 100, B: 80 to 89, C: 70 to 79, D: 60 to 69, F: below 60).
+**Variations:** reject scores below 0 or above 100; check the boundaries (90, 89, 80, 79, 60, 59, 0, 100); re-ask until valid (needs `while`, not done yet).
+
+- Pseudocode (from my code): ask for a score; if it converts to a whole number: if it is below 0 or above 100 print an invalid message; else if 100 print a perfect-grade message; else if 90 or more print A; else if 80 or more print B; else if 70 or more print C; else if 60 or more print a grade; otherwise print a fail message; if it doesn't convert, print a message
+- Time taken: 20 mins (Nov. 4, 2026)
+- Looked anything up? (what): Operations in W3Schools
+- Where I got stuck: found a bug where after entering above 100 plus, 0, and negative numbers so I have to look up how to use the operator properly in W3Schools.
+- Hand trace done? (yes/no): yes (trace 95, 72, 59, 150 and the boundaries)

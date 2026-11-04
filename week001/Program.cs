@@ -9,5 +9,7 @@
         // Ex01_PrintOneToTen.Run();
         Ex02_EvenOdd.Run();
         // Ex03_FizzBuzz.Run();
+        // Ex03a_FizzBuzz.Run();
+        // Ex04_GradeClassifier.Run();
     }
 }
