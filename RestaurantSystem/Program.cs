@@ -5,8 +5,8 @@ class Program
 {
     static void Main(string[] args)
     {
-        RestaurantService restaurant = new RestaurantService();
+        MenuService menu = new MenuService();
 
-        restaurant.DisplayMenu();
+        menu.DisplayMenu();
     }
 }
